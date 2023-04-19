@@ -19,3 +19,19 @@ console.log(a + b);
 console.log(a * b);
 console.log(a / b);
 console.log("hello " + myName);
+
+//function
+function sayHello(nameOfPerson, age) {
+  console.log(nameOfPerson);
+}
+
+sayHello("John", 1);
+sayHello("Nico", 2);
+sayHello("Matt", 3);
+sayHello("Hoon", 4);
+
+function plus(firstNumber, secondNumber) {
+  console.log(firstNumber + secondNumber);
+}
+
+plus(8, 50);
