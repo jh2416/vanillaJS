@@ -22,13 +22,13 @@ console.log("hello " + myName);
 
 //function
 function sayHello(nameOfPerson, age) {
-  console.log(nameOfPerson);
+  console.log("Hello my name is " + nameOfPerson + " and I am " + age);
 }
 
-sayHello("John", 1);
-sayHello("Nico", 2);
-sayHello("Matt", 3);
-sayHello("Hoon", 4);
+sayHello("John", 15);
+sayHello("Nico", 27);
+sayHello("Matt", 31);
+sayHello("Hoon", 43);
 
 function plus(firstNumber, secondNumber) {
   console.log(firstNumber + secondNumber);
