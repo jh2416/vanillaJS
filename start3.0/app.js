@@ -19,6 +19,15 @@ const cool = document.querySelector(".hello h1:first-child");
 //여러개인 경우 first element만 가져옴, 모두 가져오려면 querySelectorAll
 //const cool = document.querySelector("#hello"); == const cool = document.getElementById("hello");
 
+function handleTitleClick() {
+  console.log("title was clicked!");
+  cool.style.color = "blue";
+}
+
 cool.innerText = "hello";
 
 console.log(cool);
+
+//cool.style.color = "blue"; //change color
+
+cool.addEventListener("click", handleTitleClick); //cool을 click하는 것을 listen
