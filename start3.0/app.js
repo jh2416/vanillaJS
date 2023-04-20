@@ -20,8 +20,23 @@ const cool = document.querySelector(".hello h1:first-child");
 //const cool = document.querySelector("#hello"); == const cool = document.getElementById("hello");
 
 function handleTitleClick() {
-  console.log("title was clicked!");
+  cool.innerText = "title was clicked!";
   cool.style.color = "blue";
+}
+
+function handleMouseEnter() {
+  cool.innerText = "mouse is here!";
+  cool.style.color = "blue";
+}
+
+function handleMouseLeave() {
+  cool.innerText = "mouse is gone!";
+  cool.style.color = "black";
+}
+
+function handleWindowResize() {
+  cool.innerText = "just resized!";
+  document.body.style.backgroundColor = "tomato";
 }
 
 cool.innerText = "hello";
@@ -31,3 +46,8 @@ console.log(cool);
 //cool.style.color = "blue"; //change color
 
 cool.addEventListener("click", handleTitleClick); //cool을 click하는 것을 listen
+
+cool.addEventListener("mouseenter", handleMouseEnter);
+cool.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize); //window는 기본 제공
