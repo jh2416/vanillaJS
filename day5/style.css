@@ -1,0 +1,19 @@
+body {
+  display: flex;
+}
+
+h1 {
+  color: white;
+}
+
+.big {
+  background-color: orange;
+}
+
+.medium {
+  background-color: plum;
+}
+
+.small {
+  background-color: skyblue;
+}
