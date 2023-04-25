@@ -7,7 +7,7 @@ function onLoginBtnClick() {
   console.log("click!!");*/
   const username = loginInput.value;
   console.log(username);
-  /* html 파일 <form>부분
+  /* html 파일 <form>부분, 유효성을 확인하는 연습은 중요 
   if (username === "") {
     alert("Please write your name");
   } else if (username.length > 15) {
