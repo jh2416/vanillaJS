@@ -2,6 +2,9 @@ const loginForm = document.getElementById("login-form"); //id를 찾고
 const loginInput = loginForm.querySelector("input"); //loginForm에서 바로 찾음
 const loginButton = loginForm.querySelector("button");
 //첫줄 지우고 2, 3줄 document.querySelector("#login-form input/botton");도 같은 코드
+
+const link = document.querySelector("a");
+
 function onLoginSubmit(event) {
   event.preventDefault();
   console.log(tomato);
@@ -17,7 +20,14 @@ function onLoginSubmit(event) {
     alert("Your name is too long.");
   }*/
 }
+function handleLinkClick(event) {
+  event.preventDefault(); //이러면 alert이후에 다른페이지로 이동 안함
+  console.log(event);
+  alert("clicked!");
+}
 
 //loginButton.addEventListener("click", onLoginBtnClick);
 loginForm.addEventListener("submit", onLoginSubmit);
-//브라우저는 엔터를 누를때 새로고침을 하고 form을 submit하도록 프로그래밍 되어있음-tomato추가 부분으로 확인
+//브라우저는 엔터를 누를때 새로고침을 하고 form을 submit하도록 프로그래밍 되어있음-event추가 부분으로 확인
+
+link.addEventListener("click", handleLinkClick); //alert창이 기본동작을 막음
