@@ -8,8 +8,18 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <form id="login-form"></form>
-    <a href="https://nomadcoders.co">Go ro courses</a>
+    <form id="login-form">
+      <!--class="hidden" : css로 가리기-->
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <!--<a href="https://nomadcoders.co">Go ro courses</a>기본동작: 클릭 시 다른 페이지로 이동-->
     <script src="app.js"></script>
   </body>
 </html>
