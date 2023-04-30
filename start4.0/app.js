@@ -11,8 +11,17 @@ function onLoginSubmit(event) {
   event.preventDefault();
   loginForm.classList.add("hidden"); //한번 입력하면 form 안보임
   const username = loginInput.value;
+
+  //login 정보 기억하기 - local storage API
+  /* console창 입력
+  localStorage.setItem("username", "nico")
+  localStorage.getItem("username")
+  localStorage.removeItem("username")
+  */
+  localStorage.setItem("username", username);
+
   greeting.innerText = "Hello " + username; //form은 숨겨지고 h1에 내용은 들어가지만 보이지 않음
-  greeting.innerText = `Hello ${username}`; //위랑 같은 동작  ``작은따옴표 아님! string이랑 변수를 합쳐줌
+  //greeting.innerText = `Hello ${username}`; //위랑 같은 동작  ``작은따옴표 아님! string이랑 변수를 합쳐줌
   //규칙1. 변수를 string안에 넣고싶다면 ${변수명}
   //규칙2. `(백틱 기호)로 시작해야함!
   greeting.classList.remove(HIDDEN_CLASSNAME); //h1나타남
